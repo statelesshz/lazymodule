@@ -1,3 +1,3 @@
 # draft
 
-experimental code for pack up module and register module
+experimental code for pack-up module and register module
