@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lazymodule"
+version = "0.0.1"
+description = "experimental code for pack-up module and register module"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["deep learning"]
+authors = [
+    {email = "hzji210@gmail.com"},
+    {name =" statelesshz" }
+]
+requires-python = ">=3.8"
+classifiers = [
+    # Update if needed. See https://pypi.org/classifiers/
+    "Development Status :: 1 - Planning",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+style = ["black", "isort", "flake8"]
+test = ["pytest", "pytest-cov"]
+pt = ["torch"]
+tf = ["tensorflow-cpu>=2.6"]
+all = ["lazymodule[test]", "lazymodule[test]"]
+
+[project.urls]
+"Homepage" = "https://github.com/statelesshz/lazymodule"
+"Bug Tracker" = "https://github.com/statelesshz/lazymodule/issues"
